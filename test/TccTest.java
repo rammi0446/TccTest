@@ -37,6 +37,14 @@ public class TccTest {
 	}
 	
 	//R3:Zone 3
-	
+	@Test
+	public void testBetweenZone() {
+		Tcc t = new Tcc();
+		String[] from = { "Don Mills" };
+		String[] to = { "Finch" };
+		double output = t.calculateTotal(from, to);
+		assertEquals("3.0", String.valueOf(output));
+
+	}
 
 }
