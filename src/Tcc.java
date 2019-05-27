@@ -8,7 +8,11 @@ public class Tcc {
 		{
 			return 2.5;
 		}
-		if(from[0] == Zone2[0] && to[0] == Zone2[1])
+		else if(from[0] == Zone2[0] && to[0] == Zone2[1])
+		{
+			return 3.00;
+		}
+		else if(from[0] == Zone1[0] && to[0] == Zone2[1])
 		{
 			return 3.00;
 		}
