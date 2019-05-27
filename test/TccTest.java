@@ -16,7 +16,12 @@ public class TccTest {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		Tcc t = new Tcc();
+		String[] from = { "Leslie" };
+		String[] to = { "Don Mills" };
+		double output = t.calculateTotal(from, to);
+		assertEquals("$2.50", output);
+
 	}
 
 }
