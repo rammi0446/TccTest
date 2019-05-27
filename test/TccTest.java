@@ -32,8 +32,7 @@ public class TccTest {
 		String[] from = { "Sheppard" };
 		String[] to = { "Finch" };
 		double output = t.calculateTotal(from, to);
-		
-		assertEquals("3.00", String.valueOf(output));
+		assertEquals("3.0", String.valueOf(output));
 
 	}
 
