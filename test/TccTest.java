@@ -63,7 +63,7 @@ public class TccTest {
 			assertEquals("2.5", String.valueOf(output2));
 			//total cost
 			double total = output1 + output2;
-			assertEquals(5.50, total);
+			assertEquals("5.5", String.valueOf(total));
 
 		}
 
