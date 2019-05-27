@@ -11,7 +11,8 @@ public class Tcc {
 		
 		boolean containFromZone2 = Arrays.stream(Zone2).anyMatch(from[0]::equals);
 		boolean containtoZone2 = Arrays.stream(Zone2).anyMatch(to[0]::equals);
-
+		for(int i=0;i<2;i++)
+		{
 		if(containFromZone1 == true && containtoZone1 == true)
 		{
 			return 2.5;
@@ -23,6 +24,8 @@ public class Tcc {
 		else if(containFromZone1 == true && containtoZone2 == true)
 		{
 			return 3.00;
+		}
+		System.out.println(i);
 		}
 		return 0;
 		
