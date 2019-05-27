@@ -14,15 +14,26 @@ public class TccTest {
 	@After
 	public void tearDown() throws Exception {
 	}
-
+//R1:zone 1
 	@Test
-	public void test() {
+	public void testZone1() {
 		Tcc t = new Tcc();
 		String[] from = { "Leslie" };
 		String[] to = { "Don Mills" };
 		double output = t.calculateTotal(from, to);
 		
 		assertEquals("2.5", String.valueOf(output));
+
+	}
+	//R2:Zone 2
+	@Test
+	public void testZone2() {
+		Tcc t = new Tcc();
+		String[] from = { "Sheppard" };
+		String[] to = { "Finch" };
+		double output = t.calculateTotal(from, to);
+		
+		assertEquals("3.00", String.valueOf(output));
 
 	}
 
