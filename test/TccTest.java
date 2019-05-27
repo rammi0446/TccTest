@@ -47,7 +47,7 @@ public class TccTest {
 
 	}
 	
-	//R3:Zone 3
+	//R3: Two Trip
 		@Test
 		public void testTrip() {
 			Tcc t = new Tcc();
@@ -66,5 +66,29 @@ public class TccTest {
 			assertEquals("5.5", String.valueOf(total));
 
 		}
+		//R3: Maximum trip
+				@Test
+				public void testMaxTrip() {
+					Tcc t = new Tcc();
+					//First trip
+					String[] from1 = { "Finch" };
+					String[] to1 = { "Sheppard" };
+					double output1 = t.calculateTotal(from1, to1);
+					assertEquals("3.0", String.valueOf(output1));
+					//trip two
+					String[] from2 = { "Sheppard" };
+					String[] to2 = { "Finch" };
+					double output2 = t.calculateTotal(from2, to2);
+					assertEquals("3.0", String.valueOf(output2));
+					//trip two
+					String[] from3 = { "Finch" };
+					String[] to3 = { "Sheppard" };
+					double output3 = t.calculateTotal(from3, to3);
+					assertEquals("3.0", String.valueOf(output3));
+					//total cost
+					double total = output1 + output2 + output3;
+					assertEquals("6.0", String.valueOf(total));
+
+				}
 
 }
