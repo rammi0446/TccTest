@@ -2,12 +2,13 @@
 public class Tcc {
 	public double calculateTotal(String[] from, String[] to)
 	{
-
-		if(from[0] == "Leslie" && to[0] == "Don Mills")
+		String[] Zone1 = {"Don Mills","Leslie"};
+		String[] Zone2 = {"Sheppard","Finch"};
+		if(from[0] == Zone1[1] && to[0] == Zone1[0])
 		{
 			return 2.5;
 		}
-		if(from[0] == "Sheppard" && to[0] == "Finch")
+		if(from[0] == Zone2[0] && to[0] == Zone2[1])
 		{
 			return 3.00;
 		}
