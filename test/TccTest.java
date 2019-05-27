@@ -4,6 +4,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+
 public class TccTest {
 
 	@Before
@@ -20,7 +21,8 @@ public class TccTest {
 		String[] from = { "Leslie" };
 		String[] to = { "Don Mills" };
 		double output = t.calculateTotal(from, to);
-		assertEquals("$2.50", output);
+		
+		assertEquals("2.5", String.valueOf(output));
 
 	}
 
